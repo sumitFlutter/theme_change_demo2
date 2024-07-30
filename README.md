@@ -1,16 +1,7 @@
-# theme_example_provider
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# theme_change_example_provider
+👉 Here theme_change package link :- <a href="https://github.com/sumitFlutter/theme_change">GitHub </a><br>
+👉 Here theme_change package link :- <a href="https://pub.dev/packages/theme_change">Official pub.dev </a><br>
+this package allows You to use custom Light and Dark Theme using built-in ThemeData class Otherwise You can use package provided Light and dark theme.
+<h3>Warning:-</h3><br>
+You xan only use Consumer Widget for Live Data Update(State Managment).<br>
+You can't use context.read<> /context.watch<> or provider.of(context) Object for Live Data Update(State Managment).<br>
