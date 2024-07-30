@@ -336,12 +336,11 @@ packages:
   theme_change:
     dependency: "direct main"
     description:
-      path: "."
-      ref: main
-      resolved-ref: "65d1b0d2b5b3b70f1c4cc7ad2f5f424761c46aef"
-      url: "https://github.com/sumitFlutter/theme_change"
-    source: git
-    version: "1.0.0"
+      name: theme_change
+      sha256: "5d715133d03a8ab832eb5c2f04dc4a4f35620fae1aae050b86b422c234d65f78"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   vector_math:
     dependency: transitive
     description:
