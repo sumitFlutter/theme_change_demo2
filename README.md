@@ -7,5 +7,15 @@
 <h3>You xan only use Consumer Widget for Live Data Update(State Managment).</h3>
 <h3>You can't use context.read<> /context.watch<> or provider.of(context) Object for Live Data Update(State Managment).</h3>
 <hr>
+<h2>Additional Information</h2>
+<h3>ThemeProvider.pTheme is this package's main boolean variable that contains current theme's State</h3>
+  <h3>But As You know due to provider's and my package's guidelines you have to create ThemeProvider's object not a simple object Consumer(ThemeProvider) => (a casting provider to Consumer) and consumer's builder give a object of ThemeProvider then after you can access this pTheme with help of consumer's object(value)
+    like this -> value.pTheme </h3>
+<h3>By Default ..pTheme is set to like that
+ (..pTheme == true so current themeMode value is Dark theme)
+ (..pTheme== false so current themeMode value is Light theme )</h3>
+<h3>By using above mentioned variable you can customise your app like using Switch Widget instead of Icon Widget</h3>
+<h3>By using above mentioned variable you can customise your application with condition management
+likw custom Image management (..pTheme?Image.asset(darktheme_image): Image.asset(lighttheme_image))</h3><hr>
 <img src="https://github.com/user-attachments/assets/3b8cd50e-a09d-462a-aca2-7bbbee940a2f"  height="400px"  width="200px"/>
 <img src="https://github.com/user-attachments/assets/8e18dc4a-eb70-4407-800e-0bb46fc8b7c4"  height="400px"  width="200px"/>
