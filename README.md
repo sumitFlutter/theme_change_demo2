@@ -3,6 +3,10 @@
 👉 Here theme_change package link :- <a href="https://pub.dev/packages/theme_change">Official pub.dev </a><br>
 <h3>this package allows You to use custom Light and Dark Theme using built-in ThemeData class Otherwise You can use package provided Light and dark theme.</h3>
 <hr>
+<h3>call this getTheme method and (assign themeMode Like this and define theme and dark theme Like this in MaterialApp) <br> Define Provider in MultiProvider Like this (it's necessary)</h3>
+<img src="https://github.com/user-attachments/assets/b4b47aab-e91d-434a-b5dd-4d30e256324e" />
+<hr>
+
 <h2>Warning:-</h2>
 <h3>You xan only use Consumer Widget for Live Data Update(State Managment).</h3>
 <h3>You can't use context.read<> /context.watch<> or provider.of(context) Object for Live Data Update(State Managment).</h3>
