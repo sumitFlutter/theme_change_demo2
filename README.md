@@ -4,7 +4,7 @@
 <h3>this package allows You to use custom Light and Dark Theme using built-in ThemeData class Otherwise You can use package provided Light and dark theme.</h3>
 <hr>
 <h2> New method </h2>
-<h3> Use This ThemeMaterialAppProvider Widget like this:</h3>
+<h3> Use This ThemeMaterialAppProvider Widget like this: (You can add Extra properties mentioned in official docs)</h3>
 <img src="https://github.com/user-attachments/assets/38936725-cce8-4314-bbe2-4464373e1f08" />
 
 <h2> Old Method </h2>
