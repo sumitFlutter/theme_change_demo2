@@ -6,7 +6,7 @@
 <h2> New method </h2>
 <h3> Use This ThemeMaterialAppProvider Widget like this: (You can add Extra properties that are mentioned in official docs)</h3>
 <img src="https://github.com/user-attachments/assets/38936725-cce8-4314-bbe2-4464373e1f08" />
-
+<hr>
 <h2> Old Method </h2>
 <h3>call this getTheme method and (assign themeMode Like this and define theme and dark theme Like this in MaterialApp) <br> Define ThemeProvider(Created by theme_change) in MultiProvider Like this (it's necessary)</h3>
 <img src="https://github.com/user-attachments/assets/b4b47aab-e91d-434a-b5dd-4d30e256324e" />
