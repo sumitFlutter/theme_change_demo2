@@ -10,6 +10,8 @@
 <h2> Old Method </h2>
 <h3>call this getTheme method and (assign themeMode Like this and define theme and dark theme Like this in MaterialApp) <br> Define ThemeProvider(Created by theme_change) in MultiProvider Like this (it's necessary)</h3>
 <img src="https://github.com/user-attachments/assets/b4b47aab-e91d-434a-b5dd-4d30e256324e" />
+<hr>
+<h2> use below method in old and new both method for set theme </h2> 
 <h3> Then after call this setTheme method Like this (it's necessary) </h3>
 <img src="https://github.com/user-attachments/assets/0bf7afe2-5153-4e36-8ef1-1816b8cbf77d" />
 
