@@ -1,34 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:theme_change/theme_change.dart' as theme;
+import 'package:theme_change/theme_change.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider.value(value: theme.ThemeProvider()..getTheme())
-      ],
-      child: Consumer<theme.ThemeProvider>(builder: (context, value, child) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
-          theme: theme.ThemeChange.lightTheme,
-          darkTheme: theme.ThemeChange.darkTheme,
-          themeMode: value.mode,
-          home: const MyHomePage(title: 'theme_change Provider Demo'),
-        );
-      }),
-    );
-  }
+  runApp(
+    const ThemeMaterialAppProvider(
+      home: MyHomePage(title: "Theme Change Provider Demo"),
+      otherProviders: [],
+      debugShowCheckedModeBanner: false,
+    ),
+  );
 }
 
 class MyHomePage extends StatefulWidget {
@@ -52,23 +34,23 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Consumer<theme.ThemeProvider>(
+            Consumer<ThemeProvider>(
               builder: (context, value, child) {
                 return value.pTheme
                     ? Text(
-                        "This is Demo of dark Theme",
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      )
+                  "This is Demo of dark Theme",
+                  style: Theme.of(context).textTheme.headlineMedium,
+                )
                     : Text(
-                        "This is Demo of Light Theme",
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      );
+                  "This is Demo of Light Theme",
+                  style: Theme.of(context).textTheme.headlineMedium,
+                );
               },
             )
           ],
         ),
       ),
-      floatingActionButton: Consumer<theme.ThemeProvider>(
+      floatingActionButton: Consumer<ThemeProvider>(
         builder: (context, value, child) {
           return FloatingActionButton(
             onPressed: () {
