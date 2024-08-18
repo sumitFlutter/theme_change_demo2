@@ -17,7 +17,7 @@
 
 <hr>
 <h2>Warning:-</h2>
-<h3>You xan only use Consumer Widget for Live Data Update(State Managment).</h3>
+<h3>You can only use Consumer Widget for Live Data Update(State Managment).</h3>
 <h3>You can't use context.read<> /context.watch<> or provider.of(context) Object for Live Data Update(State Managment).</h3>
 <hr>
 <h2>Additional Information</h2>
